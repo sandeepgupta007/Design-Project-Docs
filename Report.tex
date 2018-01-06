@@ -1,0 +1,827 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Group - B206
+%	Project Name - Controlling Air Pollution Emission on crowded roads
+%	
+%	Used LaTeX to make the report with the help of overleaf and sharelatex
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{float}
+\usepackage[margin=2.5cm]{geometry}
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\includegraphics[scale=0.3]{slogo.jpg}\\[0.5cm]
+
+\textsc{ PDPM } \\
+\textsc{Indian Institute of Information Technology Design and Manufacturing, Jabalpur}\\[1cm] % Name of your university/college
+\textsc{\Large Design Project Report}\\[0.5cm] % Major heading such as course name
+\textsc{\large DS-302}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Controlling Air Pollution Emission}\\[0.2cm] % Title of your document
+\HRule \\[0.5cm]
+
+\textbf{Group B2-06}\\
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Project Team:}\\[0.01cm]
+\textsc{Aditya} Dhawan \\
+\textsc{Pranjul} Shukla \\
+\textsc{Ravuri} Abhignya \\
+\textsc{Rishi} Mishra\\ % Your name
+\textsc{Sandeep} Gupta \\ 
+
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Course In-charge} \\
+Prof. \textsc{Puneet} Tandon\\ [0.5cm]
+\emph{Instructor} \\
+Dr. \textsc{Samrat} Rao\\ % Supervisor's Name
+
+\end{flushright}
+\end{minipage}\\[2cm]
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large November 15, 2017}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+ % Include a department/university logo - this will require the graphicx package
+ 
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+\begin{abstract}
+
+In this report we will give you an overview of our design project Vyom with the specifications and rendered images of its CAD model explaining it's functionalities. \\
+
+The report contains description of all the user needs, different concepts that we created in order to meet those user needs, the evaluation process that we followed to evaluate our concepts and techniques that we applied in order to choose our final concept. 
+It also contains the descriptive explanation of our concept and how it will serve our need statement. \\
+
+There are numerous diagrams and charts that explain the issue that we are tackling, our need statement, design and provide a better understanding of what Vyom is all about. We've used sketches and renders to make it easier to visualize the looks and functioning of our concepts and final design. We've included some facts from different sources in order to strengthen our points and provide a better insight into the issue.
+
+\end{abstract}
+
+\newpage
+
+\section{Introduction}
+
+With the rise in global warming and increasing pollution levels on metropolitan roads, it is becoming essential to find a viable alternative to reduce the pollution on the crowded roads. \\
+
+Metros across the world bear the major brunt of environment pollution and Total Suspended Particulate (TSP) is 3 times the level WHO above annual average in in these cities which is having an adverse affect on the health of people and biodiversity nearby.\\
+
+The Aim of this project was to create a product to lessen the pollution level on busy roads where the main criteria being it's cost and environment friendliness in terms of both efficiency and materials. This Report present design of six such forms, where initially we build the need statement, specified the product specification to come up with a single form upon evaluating them on benchmarked product. \\
+
+Finally the most efficient product design is proposed with detailing of the process after product specification were screened with user requirement, need statement and effectiveness of the cost. \\
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\textwidth]{airpollution.png}
+\caption{\label{fig:}Major Causes of air pollution}
+\end{figure}
+
+\newpage
+
+\section{Objective}
+
+\label{sec:examples}
+
+The project aims towards reducing the amount of Particulate matter in the air around busy roads. Our desired product should be better than the existing solutions like anti-pollution mask, smog sucking bikes etc. and should provide better environment around busy roads. We expect our product to be able to reduce PM10 and PM2.5(particulate matter of 10 and 2.5 micron) levels on such roads significantly resulting in an environment that is pollution free and harmless to human life. The product should ensure and maintain clean air and provide safety to nearby biodiversity. On the whole, the product we aim to design should reduce concentration of particulate matter in the air around heavily crowded roads.
+
+\newpage
+
+\section{User and Literature Survey}
+
+\subsection{User Survey}
+
+Due to the seriousness related to the issue, it is decided to do the user survey by observation and direct interviewing. The main asked were as follows, 
+
+\paragraph{Questionnaire}
+\begin{enumerate}
+\item Do you face traffic daily?
+\item Do you use open Vehicle like auto and bikes?
+\item Do you face any problem due to air pollution?
+\item Whether you faces health related problem due to pollution?\item Is minimization of air pollution on roads a good solution?
+\end{enumerate}
+
+\paragraph{Analysis of Data}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\textwidth]{pareto.jpg}
+\caption{\label{fig:}Responses of User survey through Bar Chart}
+\end{figure}
+]
+\begin{itemize}
+\item Around 90\% people accepted to minimize on-road air pollution as a good solution.
+\item 65-85\% people accepted transportation as a major cause
+\item 80\% people said that they are facing health related issues due to air pollution
+\end{itemize}
+
+\subsection{Literature Survey}
+\begin{itemize}
+\item Filtering Mask
+\begin{itemize}
+\item Easily available and user friendly
+\item No protection against skin and eye problems
+\end{itemize}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.5\textwidth]{dust.jpg}
+\caption{\label{fig:}Filtering Gas Mask}
+\end{figure}
+
+\item Smog sucking Bikes(Proposed Solution)
+\begin{itemize}
+\item For specific people owning the bikes
+\item Purifies air while you are cycling
+\end{itemize}
+
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.5\textwidth]{smog.jpg}
+\caption{\label{fig:}Smog Sucking Bikes}
+\end{figure}
+
+\item Parasitic Robots (Theoretical Solution)
+
+\begin{itemize}
+\item Absorbs pollution, to generate its own power
+\end{itemize}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.5\textwidth]{parasite.jpg}
+\caption{\label{fig:}Parasitic Robots}
+\end{figure}
+
+\end{itemize}
+
+\section{Need Statement}
+
+\textbf{To design a sustainable solution to the problem of air pollution on busy roads that is not user specific and is cheap and efficient.}
+
+\subsection{Expectations}
+
+\begin{itemize}
+\item Should tackle problems like tearing of eyes
+\item Energy-efficient
+\item Less noisy
+\item Not user specific
+\item Cost effective
+\end{itemize}
+
+\newpage
+
+\section{Product Specification}
+
+\subsection{Benchmarking}
+To get to know more details about specification of the product with some benchmarked products in this field. Gas Mask and smog sucking being the most prominent, we benchmarked specification with them.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.8]{benchmarking.jpg}
+\caption{\label{fig:}Benchmarking}
+\end{figure}
+
+\newpage
+
+\subsection{Quality Function Deployment (QFD)}
+For our quality function deployment we gathered the engineering specifications that our product must have and mapped it with our customer requirements. We also benchmarked our product against existing product that dominates the market i.e the pollution gas mask.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.85]{QFD.png}
+\caption{\label{fig:}Quality function Deployment}
+\end{figure}
+
+\newpage
+
+Specification of the product can be divided into two broad categories which are listed below.
+
+\subsection{Qualitative Specification}
+
+\begin{itemize}
+\item \textbf{Seasons shouldn’t effect it} \\
+As the product will be open to atmosphere, so it must not be affected by any particular season. 
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.3]{four_seasons_by_nalmes.jpg}
+\caption{\label{fig:}Different seasons}
+\end{figure}
+
+\item \textbf{Tough Casting Material} \\
+Frequent accidents and other damages on roads can be catastrophic for the product so the material used must be tough.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.35]{tough.png}
+\caption{\label{fig:}Stress vs Strain curve}
+\end{figure}
+
+\item \textbf{Energy Efficient and Low Power Consuming} \\
+70\% of energy still is being produced by non-renewable sources and that would be indirectly affecting the nature.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.25]{power1.jpg}
+\caption{\label{fig:}Power Grid}
+\end{figure}
+
+\newpage
+
+\item \textbf{Maintenance and Installation Cost} \\
+As the product is being used in public domain so its maintenance cost must be low and to avoid unnecessary Traffic on roads.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.5]{maintenance.png}
+\caption{\label{fig:}Under Maintenance}
+\end{figure}
+
+\item \textbf{Water Proof} \\
+Flooding of Roads in rainy season is a very common issue in many developing countries so the product must be water proof to protect it's electronic component.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.4]{roads.jpg}
+\caption{\label{fig:}Waterlogging}
+\end{figure}
+
+\item \textbf{Less Noisy and attractive} \\
+
+It should produce the least possible Noise and should be aesthetically pleasing also. Noise pollution is a major concern for crowded roads as it is producing around 80dbA loudness on the busy with heavy traffic. 
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.30]{noisePollution.jpg}
+\caption{\label{fig:}Noise pollution}
+\end{figure}
+\end{itemize}
+
+\subsection{Quantitative Specification}
+
+\begin{table}[!htb]
+\centering
+
+\hspace{5em} 
+\begin{tabular}{l|r}
+
+Specifications  & Details \\ \hline
+
+Power rating \textless 50W & Per unit of system \\ 
+
+Inlet air PM10 level \textgreater 80 & WHO standard 40 \\
+
+Outlet air PM10 level \textless 80 & \\
+
+Net Width \textless 0.75m & Width to maximize area coverage \\
+
+Net Height \textless 1.2 m & For better efficiency \\
+
+Net Depth \textless 0.5m & Maximum depth of divider \\
+
+Height of Outlet \textgreater 0.5m (above device) &  Avoid mixing of clear air \\
+
+Inlet air volume flow rate \textgreater  1030 gal/hr & Expected outcome \\
+
+Inlet air velocity 8.67-13.33 cm/min & \\
+\end{tabular}
+\caption{\label{tab:widgets}Quantitative Specification.}
+\end{table}
+\vspace*{10mm}
+
+\newpage
+
+\section{Concepts}
+
+By examining our user needs we generated a few concept that deliver their requirements and can be possible solutions to the problem of air pollution. Details of those concepts is discussed below.
+
+\subsection{Underground pollution suction system}
+
+\begin{itemize}
+\item Suction system along with the filtration system will be fitted under the roads.
+\item  The polluted air inlet vents will come on the surface of the road or along the sides.
+\item  The clean air outlet will be away from roads in order to avoid re-filtering.
+\item This will be a centralized system with a single filtering system for multiple polluted air inlet vents.
+\end{itemize}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.5]{underground.jpg}
+\caption{\label{fig:}Underground suction system sketch}
+\end{figure}
+
+\newpage
+
+\subsection{Overhead pollution Suction system}
+
+\begin{itemize}
+\item Multiple overhead arches will serve as inlet vents for polluted air.
+\item There will be a centralized filtration system for all overhead inlet arches.
+\item The clean air outlet will be attached to the central filtration system.
+\item This is a centralized system where the filtration system will be placed somewhere near the roads.
+\end{itemize}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.5]{overhead.jpg}
+\caption{\label{fig:}Overhead Pollution Suction System Sketch}
+\end{figure}
+
+\subsection{Electrostatic precipitation system}
+
+\begin{itemize}
+\item  A set of inlets will pull the polluted air from the roads.
+\item  An electrostatic precipitator will remove the suspended particulate matter from the polluted road.
+\item The outlet will grow out from the precipitator to release the purified air.
+\end{itemize}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.15]{electro.jpg}
+\caption{\label{fig:}Electrostatic Precipitation system Sketch}
+\end{figure}
+
+\newpage
+
+\subsection{Pole based pollution suction system}
+
+\begin{itemize}
+\item A boxed structure holding the inlet, outlet and filtration system will be placed on any supporting pillar or pole.
+\item The whole filtration process will take place inside the boxed structure.
+\item Any particular road will hold a number of such structures with a central controller to synchronize them.
+\end{itemize}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.25]{con.jpg}
+\caption{\label{fig:}Pole Based suction System}
+\end{figure}
+
+\newpage
+
+\subsection{Smog sucking vehicles}
+
+\begin{itemize}
+\item A filtration system along with an inlet will be installed on the front of big vehicles like cars and buses
+\item The vehicle will suck the pollution, purify it, and release the purified air onto the surroundings.
+\end{itemize}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.2]{car.jpg}
+\caption{\label{fig:}Smog Sucking Vehicles Sketch}
+\end{figure}
+
+\subsection{Exhaust smoke purifier}
+
+\begin{itemize}
+\item A filtration setup will be installed on the exhaust pipes of vehicles.
+\item The filtration system will purify the air and remove the excess particulate matter from the exhaust air.
+\item This will target the root cause of major road and city air pollution
+\end{itemize}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.2]{exhaust.jpg}
+\caption{\label{fig:}Exhaust smoke purifier Sketch}
+\end{figure}
+
+\newpage
+
+\section{Concept Evaluation and Selection}
+
+Evaluation of concept against the user needs and the way they fulfilled there need. We visualized the scenarios that our product might face while functioning. We listed out pros and cons for each concept that we developed. We used techniques like Pugh's selection method to evaluate each concept.
+
+\subsection{Pugh Concept Selection Method}
+
+Those concepts which have positive score were considered in further iteration for pugh concepts selection. 
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.35]{C1.jpg}
+\caption{\label{fig:}Concepts}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.45]{C2.jpg}
+\caption{\label{fig:}Pugh selection based on Customer Requirements}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.4]{C3.jpg}
+\caption{\label{fig:}Pugh selection based on Engineering Characteristics}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.4]{C4.jpg}
+\caption{\label{fig:}Pugh selection based on Engineering Characteristics 2nd iteration}
+\end{figure}
+
+As the datum(Concept 1 - Pole based suction system) is the only one which get the positive score so we are considering datum as our final concept.
+
+\newpage
+
+\subsection{List of Pros and Cons}
+
+\begin{enumerate}
+\item Underground pollution suction system
+
+\begin{itemize}
+\item Pros
+\begin{itemize}
+\item Requires lesser ground space
+\item Centralized filtration provides better efficiency and lesser power consumption. 
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item Cons
+\begin{itemize}
+\item Installation and maintenance cost is high
+\item Water logging and rain may produce issue for such design
+\end{itemize}
+\end{itemize}
+
+\item  Pole based pollution suction system
+
+\begin{itemize}
+\item Pros
+\begin{itemize}
+\item Can fulfill any type of pollution control requirement 
+\item Maintenance and installation costs are cheap.
+\item Can withstand most weather condition.
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item Cons
+\begin{itemize}
+\item Is lesser efficient compared to centralized filtration systems
+\item Requires fairly enough ground space or installation space
+\end{itemize}
+\end{itemize}
+
+
+\item  Overhead pollution Suction system
+
+\begin{itemize}
+\item Pros
+\begin{itemize}
+\item Is more efficient as it has a centralized filtration system.
+\item Can withstand most weather conditions
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item Cons
+\begin{itemize}
+\item Installation cost is comparatively very high
+\item Can create issues with the traffic control
+\item Requires large ground space for installation as centralized filter is installed on the ground.
+\end{itemize}
+\end{itemize}
+
+\item Electrostatic precipitation system
+
+\begin{itemize}
+\item Pros
+\begin{itemize}
+\item Lesser suction power required as no pressure is needed to purify the air
+\item The electrostatic precipitator doesn't require consistent replacement and cleaning and can work for long
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item Cons
+\begin{itemize}
+\item Requires a lot of ground space
+\item Needs a lot of power to run
+\item High humidity in air can affect it adversly
+\end{itemize}
+\end{itemize}
+
+\item Smog sucking vehicles
+
+\begin{itemize}
+\item Pros
+\begin{itemize}
+\item Not limited to a particular place.
+\item Can reduce more than other setups for the same amount of time.
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item Cons
+\begin{itemize}
+\item Power required for filtration is needed to be delivered by the vehicle which would not be efficient.
+\item Will require proper maintenance from time to time requires a lot of vehicles to install the setup in order for the solution to make any difference
+\end{itemize}
+\end{itemize}
+
+\item Exhaust smoke purifier
+
+\begin{itemize}
+\item Pros
+\begin{itemize}
+\item This solution in most ideal cases gives maximum efficiency
+\item This directly minimizes the major source for air pollution around the world
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item Cons
+\begin{itemize}
+\item It requires very frequent monitoring and removal of soot from the filter.
+\item Maintaining such a setup is exhausting and time consuming
+\item It directly affects the performance of one's vehicles and is highly dependent on the amount of people adapting to the solution
+\end{itemize}
+\end{itemize}
+
+\end{enumerate}
+
+\newpage
+
+\section{Embodiment Design}
+
+\subsection{Block Diagram for the product working}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.5]{block_diagram.jpg}
+\caption{\label{fig:}Block Diagram}
+\end{figure}
+
+\subsection{Parametric Design Specification}
+\begin{itemize}
+\item \textbf{Sensor}
+\begin{itemize}
+\item Working voltage: DC 5.0 (+- 0.5V)
+\item Working current(Max): 90mA 
+\item Humidity Range:Working Conditions 0-95\% RH
+\item Temperature Range: Working Conditions -20 to 60 degree
+\item DSM501 dust sensor can sense more than 1 micron tiny particles.
+\end{itemize}
+
+\item \textbf{Filter}
+\begin{itemize}
+\item High Efficiency Particulate Absorber(HEPA) type filtration 
+\item Effectively removes up to 1 micron particles
+\item Helps absorb harmful pollutants such cs VOC's.
+\item HEPA filtration removes up to 99.97\% of airborne 
+allergens.
+\end{itemize}
+
+\newpage
+
+\item \textbf{Air pump}
+
+\begin{itemize}
+\item Power Consumption 35W
+\item Flow Rate 1030 gal/hr
+\item Can withstand humidity of 95\%
+\item Air Velocity - 8.67-13.33 cm/min
+\end{itemize}
+
+\item \textbf{Micro controller}
+\begin{itemize}
+\item Operating Voltage 5V
+\item Input Voltage Limits 6-20V
+\item Digital I/O pins 14(of which 6 provide PWM output)
+\item Analog Input pins 6
+\item DC current per I/O pin 40mA
+\item DC current per 3.3V pin 50mA
+\item Flash Memory 32 KB
+\item SRAM 2KB
+\item EEPROM 1KB
+\item Clock Speed 16Mhz
+
+\end{itemize}
+\end{itemize}
+
+\newpage
+
+\section{Detail Design}
+
+\paragraph{Drawing Sheet}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.4]{d2.jpg}
+\caption{\label{fig:}Lower Duct Drawing sheet}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.35]{d3.jpg}
+\caption{\label{fig:}Filter Case Drawing sheet}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.5]{d4.jpg}
+\caption{\label{fig:}Base Drawing sheet}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.5]{d5.jpg}
+\caption{\label{fig:}Upper Duct Drawing sheet}
+\end{figure}
+
+\newpage
+
+\subsection{Detail Dimensioning}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.8]{dim.jpg}
+\caption{\label{fig:}Detail Dimensioning of the product}
+\end{figure}
+
+\newpage
+
+\subsection{Time Estimation of the Product}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.35]{time.jpg}
+\caption{\label{fig:}Estimation of Time}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.9]{AO.jpg}
+\caption{\label{fig:}Time Estimation, Activity on Nodes}
+\end{figure}
+
+Critical Path: a-b-c-d-e-g-h \\
+
+Time in Critical Path: 15 Weeks (Minimum Project Completion time)
+
+\newpage
+
+\subsection{Cost Estimation}
+
+After conducting the market survey, we estimated the cost of the internal components to be as given in the figure 26.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.6]{cost.jpg}
+\caption{\label{fig:}Estimation of Cost}
+\end{figure}
+
+\newpage
+
+\section{Prototype (Physical or Virtual)}
+
+\paragraph{Explored View}
+
+This section contains how the product will look at different stages of its making as estimated in a sequential order.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.6]{explorer.jpg}
+\caption{\label{fig:}Explored View of the product}
+\end{figure}
+
+\subsection{Chassis}
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.85]{ch1.JPG}
+\caption{\label{fig:}Chassis prototype}
+\end{figure}
+
+\subsection{Chassis with Fan and vents}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.75]{ch2.JPG}
+\caption{\label{fig:}Chassis with Fan and vents prototype}
+\end{figure}
+
+\subsection{Outer Body attached}
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.75]{ch3.JPG}
+\caption{\label{fig:}Outer Body attached prototype}
+\end{figure}
+
+
+\subsection{Filter attached}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.7]{ch4.JPG}
+\caption{\label{fig:}Filter attached prototype}
+\end{figure}
+
+\subsection{Front frame attached}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.65]{ch5.JPG}
+\caption{\label{fig:}Front frame attached prototype}
+\end{figure}
+
+
+\subsection{Outlet and Sensor attached}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.5]{ch6.png}
+\caption{\label{fig:}Outlet and Sensor attached prototype}
+\end{figure}
+
+
+\newpage
+
+\section{Results}
+
+The results that we expect to obtain from our design project are as follows, 
+
+\begin{itemize}
+\item Cleaner air around busy roads in major cities.
+\item Better environment around the more polluted parts of the city.
+\item Lower \textbf{PM10} and \textbf{PM2.5} levels for the city resulting in a better quality of air for everyone to breath.
+\item A reliable system that ensures clean air and better surrounding ensuring conservation of biodiversity around polluted roads.
+\end{itemize}  
+
+\newpage
+
+\section{Concluding Remarks}
+
+There isn't a doubt that the world needs a solution to the problem of pollution in this age of ever growing requirement of energy. \\
+
+Reducing pollution is the more sensible approach as escaping it would not be an option in a few years. Transportation being one of the most influential factors for the increasing pollution in the air has to be targeted and by our product we are doing the same. \\
+
+Instead of making people survive the existing pollution we are making the environment cleaner for humans to live in. Unlike conventional measures which are incapable of delivering a better quality of air for people, our product will help making the environment around busy roads in big metropolitans around the world pollution free and clean. \\
+
+As the solution to the problem of pollution that we proposed is un-thought of,  there will be numerous challenges surrounding the development of the same. Some major challenges include
+
+\begin{itemize}
+\item Reducing product's installation and production price to an extent that it's comparatively cheaper for Governments and Industries to install.
+
+\item Making it look aesthetically appealing as it needs to stay in public domain and none of us would like to see a hideous box ruining the city's beauty.
+
+\end{itemize}
+
+As the challenges are tough we need to make the processes and materials involved in the production of our product efficient and cheap. With that done we don't want it to hinder the lives of people living nearby so it shouldn't be noisy and eventually the product should turn out to be alluring in order for it to be likable by the people that pass by. \\ \\ \\ \\ \\
+
+\begin{center}
+\line(1,0){200}
+\end{center}
+
+\end{document}
